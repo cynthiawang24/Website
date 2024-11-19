@@ -1,0 +1,541 @@
+* {
+  padding: 0; 
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "DM Mono", monospace;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: right;
+}
+
+.back-button {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .tab {
+  display: flex;
+  gap: 1rem;
+}
+
+.tablinks {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background: #f5f5f5;
+}
+
+.tab .button.active {
+  background-color: #dddddd;
+}
+
+.tabcontent {
+  display: none;
+} */
+
+/* ---------- PIXEL G ---------- */
+.g-one-pattern {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
+}
+
+.g-one {
+  width: 12rem; 
+  padding: 1rem;
+}
+
+.square {
+  background-color: black;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  transition: 1s linear;
+}
+
+.square:hover {
+  transform: rotate(360deg);
+}
+
+.one-five {
+  position: relative;
+  left: 10rem;
+}
+
+.two-two {
+  position: relative;
+  left: 4rem;
+}
+
+.two-three {
+  position: relative;
+  top: -2rem;
+  left: 6rem;
+}
+
+.two-four {
+  position: relative;
+  top: -4rem;
+  left: 8rem;
+}
+
+.three-one {
+  top: -4rem;
+  position: relative;
+  left: 2rem;
+}
+
+.three-five {
+  top: -6rem;
+  position: relative;
+  left: 10rem;
+}
+
+.four-one {
+  top: -6rem;
+  position: relative;
+  left: 2rem;
+}
+
+.four-five {
+  top: -8rem;
+  position: relative;
+  left: 10rem;
+}
+
+.five-two {
+  top: -8rem;
+  position: relative;
+  left: 4rem;
+}
+
+.five-three {
+  top: -10rem;
+  position: relative;
+  left: 6rem;
+}
+
+.five-four {
+  top: -12rem;
+  position: relative;
+  left: 8rem;
+}
+
+.six-one {
+  top: -12rem;
+  position: relative;
+  left: 2rem;
+}
+
+.seven-two {
+  top: -12rem;
+  position: relative;
+  left: 4rem;
+}
+
+.seven-three {
+  top: -14rem;
+  position: relative;
+  left: 6rem;
+}
+
+.seven-four {
+  top: -16rem;
+  position: relative;
+  left: 8rem;
+}
+
+.eight-five {
+  top: -16rem;
+  position: relative;
+  left: 10rem;
+}
+
+.nine-one {
+  top: -16rem;
+  position: relative;
+  left: 2rem;
+}
+
+.nine-five {
+  top: -18rem;
+  position: relative;
+  left: 10rem;
+}
+
+.ten-two {
+  top: -18rem;
+  position: relative;
+  left: 4rem;
+}
+
+.ten-three {
+  top: -20rem;
+  position: relative;
+  left: 6rem;
+}
+
+.ten-four {
+  top: -22rem;
+  position: relative;
+  left: 8rem;
+}
+
+/* ---------- CIRCLE G ---------- */
+
+.g-two-container {
+  padding: 1rem;
+  /* position:fixed; */
+}
+
+.g-two {
+  width: 20rem;
+  height: 16rem;
+  transition: 300ms ease-in-out;
+  transform-origin: center;
+}
+
+.outer-circle {
+  background-color: black; 
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+}
+
+.inner-circle {
+  position: relative;
+  top: 4rem;
+  left: 4rem;
+  background-color: white;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.horizontal-line {
+  position: relative;
+  width: 8rem;
+  height: 4rem;
+  top: -4rem;
+  left: 4rem;
+  background-color: black;
+}
+
+.vertical-line {
+  position: relative;
+  width: 4rem;
+  height: 16rem;
+  top: -16rem;
+  left: 16rem;
+  background-color: black;
+}
+
+.subtract {
+  position: relative;
+  width: 12rem;
+  height: 4rem;
+  top: -28rem;
+  left: 8rem;
+  background-color: white;
+  transition: 750ms ease-in-out;
+}
+
+.g-two:hover {
+  transform: rotate(90deg);
+}
+
+.g-two:hover .subtract {
+  transition-delay: 300ms;
+  transform: translateX(12rem);
+  /* left: 10rem; */
+}
+/* ---------- OPACITY G ---------- */
+
+.g-three {
+  padding: 1rem;
+}
+
+.magenta {
+  background-color: magenta;
+  opacity: 0.5;
+  transition: 200ms;
+}
+
+.magenta:hover, .yellow:hover, .cyan:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.yellow {
+  background-color: yellow;
+  opacity: 0.5;
+  transition: 200ms;
+}
+
+.cyan {
+  background-color: cyan;
+  opacity: 0.5;
+  transition: 200ms;
+}
+
+.ear {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  top: -10rem;
+  left: 5rem;
+}
+
+.head {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.subtract-head {
+  position: relative;
+  width: 2rem;
+  height: 4rem;
+  top: 3rem;
+  left: 4rem;
+  border-radius: 1rem;
+}
+
+.neck, .loop {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.neck {
+  position: relative;
+  top: -7.75rem;
+}
+
+.loop {
+  position: relative;
+  top: -11.75rem;
+  left: 4rem;
+}
+
+.connector-top {
+  position: relative;
+  top: -5rem;
+  left: 3rem;
+  width: 3rem;
+  height: 2.75rem;
+}
+
+.connector {
+  position: relative;
+  top: -9.75rem;
+  left: 3rem;
+  width: 4rem;
+  height: 2rem;
+}
+
+.subtract-neck {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  top: -19.75rem;
+  left: 3rem;
+  border-radius: 1rem;
+}
+
+.subtract-loop {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  top: -17.75rem;
+  left: 3rem;
+  border-radius: 1rem;
+}
+
+/* ---------- G CARD ---------- */
+.card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  padding: 1rem;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 400ms ease-in-out;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 1.5rem;
+  gap: 4rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-back p {
+  font-size: 1.125rem;
+}
+
+.row {
+  display: flex;
+}
+
+.pixel {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: black;
+}
+
+.pixel.blank {
+  opacity: 0;
+}
+
+.card-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-back .large-text .row > .pixel {
+  background-color: orangered;
+  /* background-color: #FED966;
+  width: 1px; */
+}
+
+/* ---------- G CUBED ---------- */
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  perspective: 800px;
+}
+
+.g-five {
+  position: relative; 
+  width: 200px;
+  height: 200px; 
+  transform-style: preserve-3d;
+  animation: cubeRotate 12s linear infinite;
+  /* transition: 300ms ease-in-out; */
+}
+
+.g-five:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cubeRotate {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  25% {
+    transform: rotateY(-180deg) rotateX(-90deg);
+  }
+  50% {
+    transform: rotateY(-390deg) rotateX(-200deg);
+  }
+  75% {
+    transform: rotateY(-560deg) rotateX(-120deg);
+  }
+  100% {
+    transform: rotateY(-720deg) rotateX(0deg);
+  }
+}
+
+.g-five > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  border: white solid 2px;
+  border-radius: 2rem;
+}
+
+.front {
+  background-color: #FF6C4D;
+  transform: translateZ(100px);
+}
+
+.back {
+  background-color: #FED966;
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+  background-color: #DDE379;
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+  background-color: #539383;
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+  background-color: #4684FB;
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  background-color: #F6C2FC;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+p {
+  font-size: 8rem;
+  color: black;
+  text-align: center;
+}

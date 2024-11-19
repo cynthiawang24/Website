@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+  font-size: clamp(0.67rem, 0.75vi + 0.55rem, 1rem);
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: clamp(3.75rem, 3.38vi + 2.96rem, 6rem) clamp(1rem, 30.1vi + -6.06rem, 21rem);
+}
+
+h1 {
+ font-size: 2rem;
+}
+
+p {
+  line-height: 155%;
+}
+
+a {
+  text-decoration: underline 2px dotted;
+  color: blue;
+  transition: 200ms ease-in-out;
+}
+
+a:hover {
+  color: purple;
+}
+
+.back-button {
+  padding:  0.75rem 1rem;
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+}
+
+.bold-section {
+  font-size: clamp(0.67rem, 0.75vi + 0.55rem, 1rem);
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  background: #f5f5f5;
+  border-radius: 1rem;
+  line-height: 140%;
+}
+
+.quote-section {
+  /* font-size: 0.75rem; */
+  padding: 0 1.5rem;
+  line-height: 155%;
+}
+
+.subheading {
+  font-size: clamp(0.67rem, 0.75vi + 0.55rem, 1rem);
+  color: gray;
+}

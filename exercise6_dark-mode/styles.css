@@ -1,0 +1,25 @@
+button {
+  font-size: 2rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+button::before {
+  content: 'hide';
+  /* helpful for setting up style-related elements rather */
+}
+
+button.active::before {
+  content: 'show';
+}
+
+button.active {
+  color: red;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+}

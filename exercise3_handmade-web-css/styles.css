@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "PF Pixelscript Pro";
+  src: url(fonts/PFPixelscriptPro.woff), "woff";
+  src: url(fonts/PFPixelscriptPro.woff2), "woff2";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  font-family: "Karla", sans-serif;
+  background-color: #f4f3ea;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "PF Pixelscript Pro", serif;
+  color: #0011e4;
+}
+
+h2 {
+  font-family: "PF Pixelscript Pro", serif;
+  font-size: 2rem;
+  color: #0011e4;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h3 a {
+  color: #ff4097;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 155%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+.back-button {
+  padding: 0.75rem 1rem;
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+}
+
+.webpage {
+  display: flex;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  padding: 4rem;
+  width: 18rem;
+  overflow-y: scroll;
+  background: #ffc7e7;
+}
+
+.sidenav > div {
+  display: flex;
+  flex-direction:column;
+  gap: 0.5rem;
+}
+
+ol li{
+  padding-top: 0.5rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 26rem;
+  padding: 4rem;
+}
+
+.main-section > a {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+.bold-section {
+  padding: 1.5rem;
+  background: #ffc7e7;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  line-height: 130%;
+  color: #0011e4;
+}
+
+.quote-section {
+  padding: 0 1.5rem;
+  font-size: 1.675rem;
+  line-height: 130%;
+  color: #c10000;
+}
+
+a {
+  text-decoration: none;
+  color: #0011e4;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #dbff08;
+  transition: 300ms ease-in-out;
+}
+
+.underline {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  font-size: 1.25rem;
+}
+
+.underline:hover {
+  color: #ff4097;
+}
+
+.subheading {
+  font-size: 1.125rem;
+}

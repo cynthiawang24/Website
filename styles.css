@@ -1,0 +1,52 @@
+:root {
+  --accent-color: blue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: clamp(3.75rem, 3.38vi + 2.96rem, 6rem) clamp(1rem, 30.1vi + -6.06rem, 21rem);
+  font-family: "Inter", sans-serif;
+}
+
+body > * {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+button {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+body.darkmode {
+  background: black;
+  color: white;
+  --accent-color: cornflowerblue;
+  /* border: 1px solid white; */
+}
+
+body.darkmode button {
+  color: white;
+  border: 1px solid #fff;
+}

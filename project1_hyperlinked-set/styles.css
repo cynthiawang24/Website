@@ -1,0 +1,249 @@
+* {
+  padding: 0; 
+  margin: 0;
+}
+
+:root {
+  --black: #070001;
+  --brown: #843113;
+  --red: #F1001E;
+  --salmon: #FF8F5F;
+  --orange: #FF4E00;
+  --yellow: #FFE71E;
+  --gold: #DFA700;
+  --green: #006F1D;
+  --mint: #96F08C;
+  --turquoise: #00D7B3;
+  --blue: #0076D0;
+  --lavendar: #AB9BFF;
+  --purple: #67287F;
+  --pink: #FF5597;
+}
+
+@font-face {
+  font-family: 'Adobe Heiti Std';
+  src: url('fonts/AdobeHeitiStd-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'ABC Gaisyr';
+  src: url('/fonts/ABCGaisyr-RegularItalic-Trial.woff') format('woff'), 
+       url('/fonts/ABCGaisyr-RegularItalic-Trial.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'ABC Helveesti';
+  src: url('/fonts/ABCHelveestiVariable-Trial.ttf') format('woff'), 
+       url('/fonts/ABCHelveestiVariable-Trial.woff2') format('woff2');
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'ABC Helveesti';
+}
+
+.paragraph p {
+  line-height: 175%;
+}
+
+p {
+  font-family: 'ABC Helveesti';
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-family: 'ABC Gaisyr';
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+body {
+  background: var(--black);
+  color: var(--yellow);
+}
+
+#chunjie, #yuanxiaojie, #qingmingjie, #duanwujie, #qixi, #zhongqiujie, #chongyangjie {
+  /* margin: 1rem; */
+  /* padding: 1rem; */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* #about.content{
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%);
+} */
+
+.char {
+  font-family: 'Adobe Heiti Std', sans-serif;
+  /* text-decoration: none;
+  color: var(--blue);
+  font-size: 10.25rem;
+  line-height: 100%; */
+}
+
+.char.active {
+  color: var(--yellow);
+}
+
+#home {
+  display: flex;
+  /* margin: 1rem; */
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.left, .right {
+  position: fixed;
+  padding: 1rem;
+  /* width: 10%; */
+  height: 100%;
+  /* opacity: 0.5; */
+}
+
+.left {
+  /* background: purple; */
+  display: flex;
+  align-items: center;
+  align-self: center;
+  z-index: 999;
+}
+
+.right {
+  right: 0;
+  /* background: purple; */
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  /* background: blue; */
+}
+
+.date, .about {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  /* background: red; */
+  /* opacity: 0.5; */
+  height: 2.5rem;
+}
+
+.date {
+  display: grid;
+  align-items: center;
+  /* z-index: 999; */
+}
+
+.about {
+  bottom: 0;
+}
+
+.about p {
+  line-height: 175%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.controls svg {
+  height: 1.25rem;
+  color: var(--blue)
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nested-links a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--blue);
+}
+
+.link a:hover, .nested-links a:hover, .nested-links .char:hover {
+  color: var(--yellow);
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--blue);
+}
+
+.link .char {
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: inherit;
+}
+
+.link .nested-links {
+  font-size: 1rem;
+  line-height: 175%;
+  display: none;
+}
+
+.link.active .nested-links {
+  display: block;
+}
+
+.moon-container {
+  position: fixed;
+  flex-direction: column;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40%;
+  z-index: -1;
+}
+
+.moon {
+  display: none;
+  /* opacity: 0; */
+  transition: opacity 1.5s ease-in-out;
+  animation: transform(rotate(360deg)) ease-in-out 1000ms;
+}
+
+.moon.active {
+  display: block;
+  /* opacity: 1; */
+  /* border: 1px solid red;
+  background: yellow; */
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 2.5rem 0;
+}

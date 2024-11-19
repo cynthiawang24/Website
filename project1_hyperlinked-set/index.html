@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="left">
+    <div class="links">
+      <div class="link">
+        <a href="#">[ <span class="char">春节</span> ]</a>
+        <div class="nested-links">
+          <a href="./chunjie">> Read story</a>
+          <a href="#">> Make food</a>
+        </div>
+      </div>
+      
+      <div class="link">
+        <a href="#">[ <span class="char">元宵节</span> ]</a>
+        <div class="nested-links">
+          <a href="./yuanxiaojie">> Read story</a>
+          <a href="#">> Make food</a>
+        </div>
+      </div>
+      
+      <div class="link">
+        <a href="#">[ <span class="char">端午节</span> ]</a>
+        <div class="nested-links">
+          <a href="./duanwujie">> Read story</a>
+          <a href="#">> Make food</a>
+        </div>
+      </div>
+      
+      <div class="link">
+        <a href="#">[ <span class="char">七夕</span> ]</a>
+        <div class="nested-links">
+          <a href="./qixi">> Read story</a>
+          <a href="#">> Make food</a>
+        </div>
+      </div>
+
+      <div class="link">  
+        <a href="#">[ <span class="char">中秋节</span> ]</a>
+        <div class="nested-links">
+          <a href="./zhongqiujie">> Read story</a>
+          <a href="#">> Make food</a>
+        </div>
+      </div>
+
+      <div class="link">
+        <a href="#">[ <span class="char">重阳节</span> ]</a>
+        <div class="nested-links">
+          <a href="./chongyangjie">> Read story</a>
+          <a href="#">> Make food</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="date">
+    <p><span id="cycleDisplay">1</span><span class="char">月</span>, 第<span id="dayDisplay">1.0</span><span class="char">天</span></p>
+  </div>
+  
+  <section id="home">
+    <div class="middle">
+      <div class="moon-container">
+        <img src="images/moon-1.svg" class="moon">
+        <img src="images/moon-2.svg" class="moon">
+        <img src="images/moon-3.svg" class="moon">
+        <img src="images/moon-4.svg" class="moon">
+        <img src="images/moon-5.svg" class="moon">
+        <img src="images/moon-6.svg" class="moon">
+        <img src="images/moon-7.svg" class="moon">
+        <img src="images/moon-8.svg" class="moon">
+        <img src="images/moon-9.svg" class="moon">
+        <img src="images/moon-10.svg" class="moon">
+        <img src="images/moon-11.svg" class="moon">
+        <img src="images/moon-12.svg" class="moon">
+        <img src="images/moon-13.svg" class="moon">
+        <img src="images/moon-14.svg" class="moon">
+        <img src="images/moon-15.svg" class="moon">
+        <img src="images/moon-16.svg" class="moon">
+        <img src="images/moon-17.svg" class="moon">
+        <img src="images/moon-18.svg" class="moon">
+        <img src="images/moon-19.svg" class="moon">
+        <img src="images/moon-20.svg" class="moon">
+        <img src="images/moon-21.svg" class="moon">
+        <img src="images/moon-22.svg" class="moon">
+        <img src="images/moon-23.svg" class="moon">
+        <img src="images/moon-24.svg" class="moon">
+        <img src="images/moon-25.svg" class="moon">
+        <img src="images/moon-26.svg" class="moon">
+        <img src="images/moon-27.svg" class="moon">
+        <img src="images/moon-28.svg" class="moon">
+        <img src="images/moon-29.svg" class="moon">
+        <img src="images/moon-30.svg" class="moon">
+      </div>
+
+      <div class="about">
+        <p><a href="/about/">[ About ]</a></p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="controls">
+        <!-- PAUSE -->
+        <div id="pause">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pause"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></svg>
+        </div>
+ 
+        <!-- PLAY -->
+        <div id="play">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        </div>  
+ 
+        <!-- RESTART -->
+        <div id="restart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

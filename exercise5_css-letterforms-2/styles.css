@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  animation: changeBackground 5s ease-in-out infinite alternate-reverse; 
+}  
+
+.letter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  width: 5vw;
+  height: 5vh;
+  background-color: black;
+  animation: changeCircle 5s ease-in-out infinite alternate-reverse; 
+}
+
+@keyframes changeBackground {
+  from {
+  }
+
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes changeCircle {
+  100% {
+    border-radius: 3rem;
+    border: white 0.25px solid;
+  }
+}
+
+.empty {
+  opacity: 0;
+}
+
+.letter {
+  /* border: 1px solid red; */
+  animation: stretchShape 5s ease-in-out infinite alternate-reverse; 
+}
+
+@keyframes stretchShape {
+  0% {
+    width: 12vw;
+  }
+  
+  50% {
+    width: 16.45vw;
+  }
+
+  100% {
+    width: 12vw;
+    transform: skew(46deg);
+  }
+}
+
